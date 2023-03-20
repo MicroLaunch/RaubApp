@@ -1,0 +1,313 @@
+@media (max-width: 500px) {
+  body {
+    margin-left: 0;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .player-container {
+    width: 90%;
+    overflow-x: hidden;
+  }
+
+  .add-buttons, .subtract-buttons {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .add-point,
+  .subtract-point {
+    width: 21%;
+    height: 40px;
+    margin: 3px 3px 3px 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(224, 222, 222);
+    border-radius: 10px;
+    font-size:xx-large
+  }
+
+  .player-name-container {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .player {
+    width: 20%;
+    height: 40px;
+    margin: 3px 3px 3px 3px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow-x: hidden;
+    border: 3px solid grey;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .score-envelope {
+    background-color: lightgreen;
+    border: 3px solid green;
+    width: 86%;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .player-score {
+    width: 20%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2% 3% 2% 3%;
+    align-content: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  .player-new-score-envelope{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .player-new-score {
+    margin: 3px 3px 3px 3px;
+    border-radius: 4px;
+    width: 20%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .score-confirm-envelope {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-self: flex-start;
+  }
+
+  .score-confirm, .score-reset, .refa {
+    width: 96%;
+    height: 60px;
+    border-radius: 25px;
+    background-color: rgb(224, 222, 222);
+  }
+  
+  .score-reset, .refa {
+    margin-top: 10px;
+  }
+
+  #overlay {
+    position: absolute; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 350px; 
+    height: 280px; 
+    top: 50%;
+    left: 50%;
+    margin-top: -140px;
+    margin-left: -175px;
+    border-radius: 35px;
+    border: 10px solid grey;
+    background-color: rgba(140, 140, 140, 0.7); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    text-align: center;
+  }
+
+  .overlay-message {
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    color:aliceblue;
+    margin-top: 12%;
+  }
+
+  .overlay-yes-button, .overlay-no-button {
+    width: 35%;
+    height: 20%;
+    margin-top: 10%;
+  }
+
+
+}
+
+body {
+  margin-left: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+}
+
+.player-container {
+  width: 90%;
+  overflow-x: hidden;
+}
+
+.add-buttons, .subtract-buttons {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.add-point,
+.subtract-point {
+  width: 21%;
+  height: 60px;
+  margin: 3px 3px 3px 3px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(224, 222, 222);
+  border-radius: 10px;
+  font-size:xx-large
+}
+
+.player-name-container {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.player {
+  width: 20%;
+  height: 40px;
+  margin: 3px 3px 3px 3px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  overflow-x: hidden;
+  border: 3px solid grey;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-envelope {
+  background-color: lightgreen;
+  border: 3px solid green;
+  width: 86%;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+}
+
+.player-score {
+  width: 20%;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2% 3% 2% 3%;
+  align-content: center;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.player-new-score-envelope{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-new-score {
+  background-color: lightgreen;
+  margin: 3px 3px 3px 3px;
+  border-radius: 4px;
+  width: 20%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.score-confirm-envelope {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-self: flex-start;
+}
+
+.score-confirm, .score-reset, .refa {
+  width: 96%;
+  height: 80px;
+  border-radius: 25px;
+  background-color: rgb(224, 222, 222);
+}
+
+.score-reset, .refa {
+  margin-top: 20px;
+}
+
+#overlay {
+  position: absolute; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 350px; 
+  height: 280px; 
+  top: 50%;
+  left: 50%;
+  margin-top: -140px;
+  margin-left: -175px;
+  border-radius: 35px;
+  border: 10px solid grey;
+  background-color: rgba(140, 140, 140, 0.7); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  text-align: center;
+}
+
+.overlay-message {
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  color:aliceblue;
+  margin-top: 12%;
+}
+
+.overlay-yes-button, .overlay-no-button {
+  width: 35%;
+  height: 20%;
+  margin-top: 10%;
+}
+
+
+
+
+
+  
+
+
+

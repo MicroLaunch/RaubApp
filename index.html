@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=400, initial-scale=1.0" />
+    <link rel="stylesheet" href="startScreen.css" />
+    <title>Raub Score</title>
+  </head>
+  <body>
+    <div class="player-form">
+      <form action="startScreen.js" class="form-wrapper">
+        <div class="number-of-players">Izaberi broj igrača?</div>
+        <select id="players" class="players" onchange="numOfPlayersHandler()">
+          <option value="None">Izaberi</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+          <option value="3">4</option>
+        </select>
+      </form>
+      <input
+        type="text"
+        id="player-1-name-prompt"
+        class="player-1-name-prompt"
+        placeholder="Igrač br. 1"
+        maxlength="6"
+      />
+      <input
+        type="text"
+        id="player-2-name-prompt"
+        class="player-2-name-prompt"
+        placeholder="Igrač br. 2"
+        maxlength="6"
+      />
+      <input
+        type="text"
+        id="player-3-name-prompt"
+        class="player-3-name-prompt"
+        placeholder="Igrač br. 3"
+        maxlength="6"
+      />
+      <input
+        type="text"
+        id="player-4-name-prompt"
+        class="player-4-name-prompt"
+        placeholder="Igrač br. 4"
+        maxlength="6"
+      />
+    </div>
+    <button class="submit-form-button" onclick="submitFormHandler()"><a id="link-verify">Potvrdi</a></button>
+    <div id="overlay" class="input-name-warning-overlay">
+      <div class="input-name-warning-message">Unesite imena svih igrača ili izaberite odgovarajući broj igrača!</div>
+      <button class="input-name-warning-button" onclick="overlayOff()">OK</button>
+    </div>
+    <script src="startScreen.js"></script>
+  </body>
+</html>

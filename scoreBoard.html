@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=400, initial-scale=1.0" />
+    <link rel="stylesheet" href="scoreBoard.css" type="text/css" />
+    <title>Raub Score</title>
+  </head>
+  <body>
+    <div class="player-container">
+      <div class="add-buttons">
+        <button
+          class="add-point"
+          id="add-point-p1"
+          onclick="addPointHandlerP1()"
+        >
+          +
+        </button>
+        <button
+          class="add-point"
+          id="add-point-p2"
+          onclick="addPointHandlerP2()"
+        >
+          +
+        </button>
+        <button
+          class="add-point"
+          id="add-point-p3"
+          onclick="addPointHandlerP3()"
+        >
+          +
+        </button>
+        <button
+          class="add-point"
+          id="add-point-p4"
+          onclick="addPointHandlerP4()"
+        >
+          +
+        </button>
+      </div>
+
+      <div class="player-name-container">
+        <div class="player" id="player-1-name">Player 1</div>
+        <div class="player" id="player-2-name">Player 2</div>
+        <div class="player" id="player-3-name">Player 3</div>
+        <div class="player" id="player-4-name">Player 4</div>
+      </div>
+
+      <div class="subtract-buttons">
+        <button
+          class="subtract-point"
+          id="subtract-point-p1"
+          onclick="subtractPointHandlerP1()"
+        >
+          -
+        </button>
+        <button
+          class="subtract-point"
+          id="subtract-point-p2"
+          onclick="subtractPointHandlerP2()"
+        >
+          -
+        </button>
+        <button
+          class="subtract-point"
+          id="subtract-point-p3"
+          onclick="subtractPointHandlerP3()"
+        >
+          -
+        </button>
+        <button
+          class="subtract-point"
+          id="subtract-point-p4"
+          onclick="subtractPointHandlerP4()"
+        >
+          -
+        </button>
+      </div>
+
+      <div class="score-envelope" id="score-envelope">
+        <div class="player-score" id="player-1">21</div>
+        <div class="player-score" id="player-2">21</div>
+        <div class="player-score" id="player-3">21</div>
+        <div class="player-score" id="player-4">21</div>
+      </div>
+
+      <div class="player-new-score-envelope">
+        <div class="player-new-score" id="pns-1"></div>
+        <div class="player-new-score" id="pns-2"></div>
+        <div class="player-new-score" id="pns-3"></div>
+        <div class="player-new-score" id="pns-4"></div>
+      </div>
+    </div>
+    <div class="score-confirm-envelope">
+      <button class="score-confirm" onclick="checkScoreHandler()">
+        Upiši rezultat
+      </button>
+      <button class="score-reset" onclick="scoreReset()">
+        Resetuj rezultat
+      </button>
+      <button class="refa" id="refa" onclick="refaStart()">Refa</button>
+    </div>
+    <div id="overlay">
+      <div class="overlay-message">Da li želite da poništite rezultat?</div>
+      <button class="overlay-yes-button" onclick="confirmResetScore()">Yes</button>
+      <button class="overlay-no-button" onclick="cancelResetScore()">No</button>
+    </div>
+    <script src="scoreBoard.js"></script>
+  </body>
+</html>

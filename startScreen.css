@@ -1,0 +1,211 @@
+body {
+  margin-left: 0;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+  overflow-x: hidden;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.number-of-players {
+  width: 100%;
+  height: fit-content;
+  font-weight: bold;
+  font-size: 350%;
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+}
+
+.players {
+  width: 180px;
+  height: 60px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  text-align-last: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.player-1-name-prompt, .player-2-name-prompt,
+.player-3-name-prompt,
+.player-4-name-prompt {
+  width: 35%;
+  height: 10%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 10px;
+  font-size: x-large;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.submit-form-button {
+  width: 200px;
+  height: 15%;
+  font-weight: bold;
+  font-size: xx-large;
+  border-radius: 25px;
+  background-color: rgb(45, 59, 248);
+  color: whitesmoke;
+}
+
+.input-name-warning-overlay {
+  position: absolute; 
+  display: none; 
+  width: 350px; 
+  height: 280px; 
+  top: 50%;
+  left: 50%;
+  margin-top: -140px;
+  margin-left: -175px;
+  border-radius: 35px;
+  border: 10px solid grey;
+  background-color: rgba(140, 140, 140, 0.7); 
+  z-index: 2; 
+  text-align: center;
+}
+
+.input-name-warning-message {
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  color:aliceblue;
+  margin-top: 5%;
+}
+
+.input-name-warning-button {
+  width: 35%;
+  height: 20%;
+  margin-top: 10%;
+}
+
+@media (max-width: 500px) {
+  body {
+    margin-left: 0;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .player-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40%;
+    overflow-x: hidden;
+  }
+
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .number-of-players {
+    width: 100%;
+    height: fit-content;
+    font-weight: bold;
+    font-size: 350%;
+    font-family: "Space Grotesk", sans-serif;
+    display: flex;
+
+  }
+
+  .players {
+    width: 180px;
+    height: 60px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    text-align-last: center;
+    text-align: center;
+  }
+
+  .player-1-name-prompt, .player-2-name-prompt,
+  .player-3-name-prompt,
+  .player-4-name-prompt {
+    width: 35%;
+    height: 10%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    font-size: x-large;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .submit-form-button {
+    width: 50%;
+    height: 50px;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  
+  .input-name-warning-overlay {
+    position: absolute; 
+    display: none; 
+    width: 350px; 
+    height: 280px; 
+    top: 50%;
+    left: 50%;
+    margin-top: -140px;
+    margin-left: -175px;
+    border-radius: 35px;
+    border: 10px solid grey;
+    background-color: rgba(140, 140, 140, 0.7); 
+    z-index: 2; 
+    text-align: center;
+  }
+
+  .input-name-warning-message {
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    color:aliceblue;
+    margin-top: 5%;
+  }
+
+  .input-name-warning-button {
+    width: 35%;
+    height: 20%;
+    margin-top: 10%;
+  }
+}
